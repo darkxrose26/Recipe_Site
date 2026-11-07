@@ -562,7 +562,42 @@ body {
         --width-12col: 100%;
     }
 
+
+    /* Hero */
+    .hero-container {
+        width: var(--width-12col);
+    }
+
     .hero-image {
         display: none;
+    }
+
+    .hero-text, .inspiration-text, .recipe-book-text-block {
+        grid-column: 3 / span 7;
+        display: grid;
+    }
+
+    /* Recipes */
+    .todays-recipes {
+        width: 90%;
+    }
+
+    .todays-recipes-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .todays-recipes-content-block {
+        min-width: 50%;
+        max-width: 100%;
+    }
+
+    .todays-recipes-content-block-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .categories {
+        width: 90%;
     }
 }
