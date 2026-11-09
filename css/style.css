@@ -612,7 +612,7 @@ h6 {
 }
 
 .media-type-icon svg {
-    font-size: 20px;
+    font-size: 24px;
     display: flex;
     align-items: center;
 }
@@ -646,14 +646,15 @@ h6 {
     text-align: right;
 }
 
-.spotify-links li {
-    list-style: none;
-    margin: 10px;
+.quote {
+    font-size: 16px;
+    text-align: right;
 }
 
-.spotify-links li a {
-    color: var(--color-light);
-    transition: 0.3s;
+.quote span {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
 }
 
 .spotify-links li a:hover {
@@ -663,6 +664,7 @@ h6 {
 .etsy {
     display: flex;
     margin-top: 20px;
+    font-size: 16px;
 }
 
 .etsy-icon {
@@ -832,5 +834,35 @@ h6 {
                 rgba(0, 0, 0, 0.7)), url("../images/kitchen-block-6.jpg");
         background-size: cover;
         background-position: center;
+    }
+
+    /* Footer */
+    .footer-content {
+        width: var(--width-12col);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content-left,
+    .footer-content-right {
+        width: var(--width-12col);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content-left,
+    .menu-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+
+    .footer-content-right {
+        margin: 10px 0px;
     }
 }
