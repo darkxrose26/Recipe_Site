@@ -159,6 +159,16 @@ body {
     margin: 0 auto;
 }
 
+.hamburger-menu {
+    display: none;
+    color: var(--color-light);
+    font-size: 24px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 .navigation {
     display: flex;
     width: var(--width-full);
@@ -667,6 +677,54 @@ h6 {
 @media (width <=768px) {
     :root {
         --width-12col: 100%;
+    }
+
+    /* Navigation */
+    .menu-container {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: var(--color-dark);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transform: translateX(100%);
+        z-index: 1000;
+        display: block;
+        transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out;
+    }
+
+    .mobile-menu.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out;
+    }
+
+
+    .mobile-menu ul {
+        padding: 0;
+    }
+
+    .mobile-menu ul li {
+        list-style: none;
+        padding: 15px;
+    }
+
+    .mobile-menu ul li a {
+        color: var(--color-light);
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
     }
 
     /* Hero */
