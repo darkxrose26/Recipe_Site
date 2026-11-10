@@ -865,4 +865,22 @@ h6 {
     .footer-content-right {
         margin: 10px 0px;
     }
+
+    .media-type {
+        display: flex;
+        grid-template-columns: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quote {
+        text-align: center;
+    }
+
+    .etsy {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
