@@ -468,7 +468,6 @@ h6 {
     grid-column: 9 / span 4;
     padding: 30px;
     border-radius: 5px;
-    position: absolute;
 }
 
 .image-section-box h4 {
@@ -487,7 +486,6 @@ h6 {
 
 
 /* In the kitchen */
-
 .content-area-content {
     display: flex;
     flex-direction: row;
@@ -533,14 +531,14 @@ h6 {
 
 .content-area-block-bottom {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
+    width: 55%;
+    transform: translateX(-20px);
 }
 
 .content-area-block-bottom button {
-    width: 30%;
+    width: 55%;
     background-color: var(--color-dark);
-    transform: translateX(-95px);
     color: var(--color-light);
     font-size: 18px;
     font-weight: 400;
@@ -655,10 +653,6 @@ h6 {
     font-size: 24px;
     display: flex;
     justify-content: center;
-}
-
-.spotify-links li a:hover {
-    color: var(--color-dark);
 }
 
 .etsy {
@@ -872,6 +866,11 @@ h6 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 10px 0px;
+    }
+
+    .menu-links {
+        text-align: center;
     }
 
     .quote {
@@ -882,5 +881,9 @@ h6 {
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+
+    .etsy-icon {
+        margin: 0;
     }
 }
