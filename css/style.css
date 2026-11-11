@@ -657,10 +657,6 @@ h6 {
     justify-content: center;
 }
 
-.spotify-links li a:hover {
-    color: var(--color-dark);
-}
-
 .etsy {
     display: flex;
     margin-top: 20px;
@@ -864,5 +860,12 @@ h6 {
 
     .footer-content-right {
         margin: 10px 0px;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: var(--width-12col);
     }
 }
