@@ -7,10 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
     hamMenu.addEventListener('click', () => {
         mobileMenu.classList.toggle('open');
     })
-
-    document.addEventListener('click', (e) => {
-        if (!mobileMenu.contains(e.target) && !hamMenu.contains(e.target)) {
-            mobileMenu.classList.remove('open')
-        }
-    })
 })

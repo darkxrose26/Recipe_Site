@@ -159,6 +159,16 @@ body {
     margin: 0 auto;
 }
 
+.hamburger-menu {
+    display: none;
+    color: var(--color-light);
+    font-size: 24px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 .navigation {
     display: flex;
     width: var(--width-full);
@@ -328,11 +338,14 @@ body {
 }
 
 .recipe-book-text-block button {
-    background-color: var(--bg-color-dark);
+    background-color: var(--color-dark);
     color: var(--color-light);
-    padding: 5px;
+    padding: 8px 16px;
     border: none;
-    border-radius: 5%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 
@@ -454,7 +467,7 @@ body {
 
 .footer {
     width: var(--width-full);
-    height: 200px;
+    height: auto;
     background-color: var(--primary-color);
     color: var(--color-dark);
     padding: 50px 80px;
@@ -558,7 +571,54 @@ body {
     :root {
         --width-12col: 100%;
     }
+    
+    /* Navigation */
+    .menu-container {
+        display: none;
+    }
 
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: var(--color-dark);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transform: translateX(100%);
+        z-index: 1000;
+        display: block;
+        transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out;
+    }
+
+    .mobile-menu.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out;
+    }
+
+
+    .mobile-menu ul {
+        padding: 0;
+    }
+
+    .mobile-menu ul li {
+        list-style: none;
+        padding: 15px;
+    }
+
+    .mobile-menu ul li a {
+        color: var(--color-light);
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 
     /* Hero */
     .hero-container {
@@ -600,6 +660,7 @@ body {
         width: 90%;
     }
 
+    /* Footer */
     .footer-content {
         width: var(--width-12col);
         display: flex;
@@ -627,5 +688,32 @@ body {
 
     .footer-content-right {
         margin: 10px 0px;
+    }
+
+    .media-type {
+        display: flex;
+        grid-template-columns: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0px;
+    }
+
+    .menu-links {
+        text-align: center;
+    }
+
+    .quote {
+        text-align: center;
+    }
+
+    .etsy {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .etsy-icon {
+        margin: 0;
     }
 }
