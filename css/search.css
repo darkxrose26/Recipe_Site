@@ -151,6 +151,11 @@ body {
     width: var(--width-full);
 }
 
+.categories-result {
+    width: var(--width-12col);
+    margin: 0 auto;
+}
+
 .hamburger-menu {
     display: none;
     color: var(--color-light);
