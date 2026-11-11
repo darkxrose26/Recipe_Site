@@ -147,16 +147,8 @@ body {
 
 .navigation,
 .hero,
-.image-section,
 .footer {
     width: var(--width-full);
-}
-
-.todays-recipes,
-.categories-result,
-.content-area {
-    width: var(--width-12col);
-    margin: 0 auto;
 }
 
 .hamburger-menu {
@@ -400,7 +392,7 @@ h6 {
 
 .footer {
     width: var(--width-full);
-    height: 200px;
+    height: auto;
     background-color: var(--primary-color);
     color: var(--color-dark);
     padding: 50px 80px;
@@ -504,7 +496,7 @@ h6 {
     :root {
         --width-12col: 100%;
     }
-    
+
     /* Navigations */
     .menu-container {
         display: none;

@@ -30,99 +30,6 @@
     --category-desserts: #9374eb;
 }
 
-/* data-category attributes */
-
-/* seafood */
-div[data-category="seafood"] {
-    border-left: 1px solid var(--category-seafood);
-}
-
-p[data-category="seafood"] {
-    color: var(--category-seafood);
-}
-
-span[data-category="seafood"] {
-    color: var(--category-seafood);
-}
-
-/* chicken */
-div[data-category="chicken"] {
-    border-left: 1px solid var(--category-chicken);
-}
-
-p[data-category="chicken"] {
-    color: var(--category-chicken);
-}
-
-span[data-category="chicken"] {
-    color: var(--category-chicken);
-}
-
-/* meats */
-div[data-category="beef/pork"] {
-    border-left: 1px solid var(--category-meats);
-}
-
-p[data-category="beef/pork"] {
-    color: var(--category-meats);
-}
-
-span[data-category="beef/pork"] {
-    color: var(--category-meats);
-}
-
-/* veg */
-div[data-category="vegetarian"] {
-    border-left: 1px solid var(--category-veg);
-}
-
-p[data-category="vegetarian"] {
-    color: var(--category-veg);
-}
-
-span[data-category="vegetarian"] {
-    color: var(--category-veg);
-}
-
-/* snacks */
-div[data-category="snack"] {
-    border-left: 1px solid var(--category-misc);
-}
-
-p[data-category="snack"] {
-    color: var(--category-misc);
-}
-
-span[data-category="snack"] {
-    color: var(--category-misc);
-}
-
-/* pasta */
-div[data-category="pasta"] {
-    border-left: 1px solid var(--category-pasta);
-}
-
-p[data-category="pasta"] {
-    color: var(--category-pasta);
-}
-
-span[data-category="pasta"] {
-    color: var(--category-pasta);
-}
-
-/* Dessert */
-div[data-category="dessert"] {
-    border-left: 1px solid var(--category-desserts);
-}
-
-p[data-category="dessert"] {
-    color: var(--category-desserts);
-}
-
-span[data-category="dessert"] {
-    color: var(--category-desserts);
-}
-
 
 * {
     margin: 0;
@@ -147,14 +54,11 @@ body {
 
 .navigation,
 .hero,
-.image-section,
 .footer {
     width: var(--width-full);
 }
 
-.todays-recipes,
-.categories,
-.content-area {
+.todays-recipes {
     width: var(--width-12col);
     margin: 0 auto;
 }
@@ -571,7 +475,7 @@ body {
     :root {
         --width-12col: 100%;
     }
-    
+
     /* Navigation */
     .menu-container {
         display: none;
